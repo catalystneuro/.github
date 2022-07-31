@@ -3,7 +3,7 @@
 Welcome to the CatalystNeuro GitHub org. We make open source software to help neuroscience labs collaborate with each other and access state-of-the-art tools to accelerate their science.
 
 ### Core infrastructure
-* [NWB Conversion Tools](https://github.com/catalystneuro/nwb-conversion-tools): Python tools for creating NWB files from multiple data sources (under development)
+* [NeuroConv](https://github.com/catalystneuro/neuroconv): Python tools for creating NWB files from multiple data sources
 * [HDF5Zarr](https://github.com/catalystneuro/HDF5Zarr): Python tools for reading HDF5 files as using Zarr
 * [RoiExtractors](https://github.com/catalystneuro/roiextractors): A common API for reading different optical physiology data formats and converting NWB (under development)
   * [RoiExtractors-GPL](https://github.com/catalystneuro/roiextractors-gpl): An extension to RoiExtractors including imports of GPL licenses
