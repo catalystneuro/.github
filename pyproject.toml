@@ -1,0 +1,3 @@
+[tool.pylint.'SPELLING']
+spelling-dict = "en_US"
+spelling-private-dict-file = "spell-check-exclusions.txt"
