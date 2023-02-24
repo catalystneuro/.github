@@ -1,30 +1,23 @@
 <p align="center">
-<img src="https://user-images.githubusercontent.com/51133164/210436509-1f565e74-a473-4e14-bf6a-697ae5612260.png" width="200">
+<a href="http://catalystneuro.com"><img src="https://user-images.githubusercontent.com/51133164/210436509-1f565e74-a473-4e14-bf6a-697ae5612260.png" width="200"></a>
 </p>
 
-# CatalystNeuro
+# Data engineering for neuroscience labs 🧠
+Neuroscience data is becoming larger and more complex everyday. The data we collect and the software we write can often be valuable outside the scope of the original project, and should be shared as public resources for the neuroscience community, but this is often a high bar for neuroscience labs to acheive on their own. While the benefits of sharing data and software are clear, it can be difficult for neroscientists to handle the data engineering challenges while focusing on the science.
 
-Welcome to the CatalystNeuro GitHub org. We make open source software to help neuroscience labs collaborate with each other and access state-of-the-art tools to accelerate their science.
+We integrate with BRAIN Initiative-funded neuroinformatics projects such as the [Neurodata Without Borders](http://nwb.org) data standard and the [DANDI Archive](http://dandiarchive.org) to help labs adopt these tools. Our goal is to help labs share their data and software easily and effectively, and to facilitate secondary analysis of these datasets to accelerate the rate of scientific discovery. We believe that effective packaging and sharing of data and software will lead to new scientific workflows that build upon and combine existing studies, enabling rapidly upon existing knowledge to expand the field towards deeper understanding of the brain and more rapid discovery of treatment for neurological disorders.
 
-### Core infrastructure
-* [NeuroConv](https://github.com/catalystneuro/neuroconv): Python tools for creating NWB files from multiple data sources
-* [HDF5Zarr](https://github.com/catalystneuro/HDF5Zarr): Python tools for reading HDF5 files as using Zarr
-* [RoiExtractors](https://github.com/catalystneuro/roiextractors): A common API for reading different optical physiology data formats and converting NWB (under development)
-  * [RoiExtractors-GPL](https://github.com/catalystneuro/roiextractors-gpl): An extension to RoiExtractors including imports of GPL licenses
+## About Us 🧑‍💻
+[CatalystNeuro](http://catalystneuro.com) is a software consulting company that specializes in data engineering for neuroscience labs. We are a globally distributed team of n neuroscientists who are also software developers, and we care deeply about helping neuroscience adopt state-of-the-art data engineering tools. We excel at helping data infrastructure tools with outreach and with helping neuroscience labs adopt data infrastructure tools. See our team [here](https://www.catalystneuro.com/team/).
 
-### Lab-specific Neurodata Without Borders (NWB) conversion projects
-* [Movshon Lab, NYU](https://github.com/catalystneuro/movshon-lab-to-nwb): Blackrock recordings (under development)
-* [Brunton Lab, UW](https://github.com/catalystneuro/brunton-lab-to-nwb): ECoG with natural arm movement (dandiset [#55](https://dandiarchive.org/dandiset/000055/draft))
-* [Giocomo Lab, Stanford](https://github.com/catalystneuro/giocomo-lab-to-nwb): SpikeGLX Neuropixel recordings on virtual linear track (dandiset [#53](https://dandiarchive.org/dandiset/000053/draft))
-* [Tank Lab, Princeton](https://github.com/catalystneuro/tank-lab-to-nwb): SpikeGLX Neuropixel recordings in a decision making task
-  * [ndx-tank-metadata](https://github.com/catalystneuro/ndx-tank-metadata): stores information about the [ViRMEn MATLAB VR program](https://pni.princeton.edu/pni-software-tools/virmen)
-* [Allen Institute](https://github.com/catalystneuro/allen-oephys-to-nwb): Simultaneous optical imaging and electrophysiology
-* [Buzsaki Lab, NYU](https://github.com/catalystneuro/buzsaki-lab-to-nwb): NeuroScope recordings of various navigation experiments (dandiset [#3](https://dandiarchive.org/dandiset/000003/draft))
-* [Groh Lab, Heidelberg](https://github.com/catalystneuro/mease-lab-to-nwb): CED and Syntalos recording systems
-* [Buffalo Lab, UW](https://github.com/catalystneuro/buffalo-lab-to-nwb): Blackrock recordings of NHPs in virtual environments
-* [Jaeger Lab, Emory](https://github.com/catalystneuro/jaeger-lab-to-nwb): Intan electrophysiology and FRET optical imaging
-  * [ndx-FRET](https://github.com/catalystneuro/ndx-fret)
+### Key Software Projects 📈
+* [NeuroConv](https://github.com/catalystneuro/neuroconv) automates conversion of data from common formats into the Neurodata Without Borders (NWB) format for distribution on the DANDI Archive.
+* [NWBWidgets](https://github.com/NeurodataWithoutBorders/nwbwidgets) provides automatic, interactive visualizations of the data within NWB files that are scalable and integrated with the DANDI Archive.
+* [SpikeInterface](https://github.com/SpikeInterface/spikeinterface) is a community-driven unified framework for spike sorting.
 
-### Customized databases for lab experiment records (based on Alyx)
-* [Giocomo Lab, Stanford](https://github.com/catalystneuro/giocomo_db) (under development)
-* [Buffalo Lab, UW](https://github.com/catalystneuro/buffalo_db)
+## Links 🔗
+
+You can find more information about us at the following links:
+
+* Twitter - [@catalystneuro](https://twitter.com/catalystneuro) 🐦
+* Website - [catalystneuro.com](https://catalystneuro.com) 🌐
