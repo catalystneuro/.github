@@ -1,4 +1,6 @@
+<p align="center">
 <img src="https://user-images.githubusercontent.com/51133164/210436509-1f565e74-a473-4e14-bf6a-697ae5612260.png" width="200">
+</p>
 
 # CatalystNeuro
 
