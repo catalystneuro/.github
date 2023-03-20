@@ -11,7 +11,7 @@ We integrate with BRAIN Initiative-funded neuroinformatics projects such as the 
 [CatalystNeuro](http://catalystneuro.com) is a software consulting company that specializes in data engineering for neuroscience labs. We are a globally distributed team of neuroscientists who are also software developers, and we care deeply about helping neuroscience adopt state-of-the-art data engineering tools. We excel at helping data infrastructure tools with outreach and with helping neuroscience labs adopt data infrastructure tools, bridging the gap between developers and users. See our team [here](https://www.catalystneuro.com/team/).
 
 ## Key Software Projects 📈
-* [NeuroConv](https://github.com/catalystneuro/neuroconv) automates conversion of data from common formats into the Neurodata Without Borders (NWB) format for distribution on the DANDI Archive.
+* [NeuroConv](https://github.com/catalystneuro/neuroconv) automates conversion of data from common formats into the [Neurodata Without Borders (NWB)](nwb.org) format for distribution on the DANDI Archive.
 * [NWBWidgets](https://github.com/NeurodataWithoutBorders/nwbwidgets) provides automatic, interactive visualizations of the data within NWB files that are scalable and integrated with the DANDI Archive.
 * [SpikeInterface](https://github.com/SpikeInterface/spikeinterface) is a community-driven unified framework for spike sorting.
 
