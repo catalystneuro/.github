@@ -14,6 +14,7 @@ We integrate with BRAIN Initiative-funded neuroinformatics projects such as the 
 * [**NeuroConv**](https://github.com/catalystneuro/neuroconv) automates conversion of data from common formats into the [Neurodata Without Borders (NWB)](nwb.org) format for distribution on the [DANDI Archive](dandiarchive.org).
 * [**NWB Widgets**](https://github.com/NeurodataWithoutBorders/nwbwidgets) provides automatic, interactive visualizations of the data within NWB files that are scalable and integrated with the DANDI Archive.
 * [**SpikeInterface**](https://github.com/SpikeInterface/spikeinterface) is a community-driven unified framework for spike sorting.
+* [**NWB GUIDE**](https://github.com/NeurodataWithoutBorders/nwb-guide) provides a user-friendly no-code graphical user interface for converting data to NWB, inspecting NWB files, and exploring the data within NWB files.
 
 ## Links 🔗
 
