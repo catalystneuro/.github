@@ -3,9 +3,9 @@ on:
     workflow_dispatch:
 
 jobs:
-    check-docstrings:
-        uses: catalystneuro/.github/workflows/check-docstrings.yaml@docstring_tests
-        with:
-            python-version: '3.10'
-            repository: 'catalystneuro/roiextractors'
-            package-name: 'roiextractors'
+  check-docstrings:
+    uses: catalystneuro/.github/.github/workflows/check-docstrings.yaml@docstring_tests
+    with:
+      python-version: '3.10'
+      repository: 'catalystneuro/roiextractors'
+      package-name: 'roiextractors'
