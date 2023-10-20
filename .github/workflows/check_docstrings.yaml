@@ -11,7 +11,7 @@ on:
             description: 'The repository to check the docstrings for.'
             required: True
             type: string
-        package_name:
+        package-name:
             description: 'The name of the package to check the docstrings for.'
             required: True
             type: string
@@ -50,4 +50,4 @@ jobs:
             repository: ${{ github.repository }}
 
       - name: Run docstring check
-        run: pytest tests/test_docstrings.py --package=${{ inputs.package_name }}
+        run: pytest tests/test_docstrings.py --package=${{ inputs.package-name }}
