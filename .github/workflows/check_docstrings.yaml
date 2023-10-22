@@ -1,0 +1,53 @@
+name: Check Docstrings
+on:
+  workflow_call:
+    inputs:
+        python-version:
+            description: 'The version of Python to use for the workflow.'
+            default: '3.10'
+            required: false
+            type: string
+        repository:
+            description: 'The repository to check the docstrings for.'
+            required: True
+            type: string
+        package-name:
+            description: 'The name of the package to check the docstrings for.'
+            required: True
+            type: string
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Conda
+        uses: s-weigand/setup-conda@v1
+
+      - name: Setup Python ${{ inputs.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ inputs.python-version }}
+
+      - name: Global Setup
+        run: |
+          pip install -U pip
+          pip install pytest-xdist
+          git config --global user.email "CI@example.com"
+          git config --global user.name "CI Almighty"
+          pip install wheel==0.41.2  # needed for scanimage
+
+      - name: Checkout Repository to be tested
+        uses: actions/checkout@v2
+        with:
+            repository: ${{ inputs.repository }}
+
+      - name: Install package
+        run: pip install .
+
+      - name: Checkout Home Repository
+        uses: actions/checkout@v2
+        with:
+            repository: ${{ github.repository }}
+
+      - name: Run docstring check
+        run: pytest tests/test_docstrings.py --package=${{ inputs.package-name }}
