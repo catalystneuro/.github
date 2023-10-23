@@ -7,5 +7,5 @@ jobs:
     uses: catalystneuro/.github/.github/workflows/check_docstrings.yaml@docstring_tests
     with:
       python-version: '3.10'
-      repository: 'catalystneuro/roiextractors'
-      package-name: 'roiextractors'
+      repository: 'catalystneuro/neuroconv'
+      package-name: 'neuroconv'
