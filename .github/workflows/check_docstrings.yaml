@@ -34,7 +34,6 @@ jobs:
           pip install pytest-xdist
           git config --global user.email "CI@example.com"
           git config --global user.name "CI Almighty"
-          pip install wheel==0.41.2  # needed for scanimage
 
       - name: Checkout Repository to be tested
         uses: actions/checkout@v2
