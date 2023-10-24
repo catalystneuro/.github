@@ -46,7 +46,7 @@ jobs:
       - name: Checkout Home Repository
         uses: actions/checkout@v2
         with:
-            repository: ${{ github.repository }}
+            repository: catalystneuro/.github
 
       - name: Run docstring check
         run: pytest tests/test_docstrings.py --package=${{ inputs.package-name }}
