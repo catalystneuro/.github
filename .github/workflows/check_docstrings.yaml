@@ -34,7 +34,6 @@ jobs:
           pip install pytest-xdist
           git config --global user.email "CI@example.com"
           git config --global user.name "CI Almighty"
-          pip install wheel==0.41.2  # needed for scanimage
 
       - name: Checkout Repository to be tested
         uses: actions/checkout@v2
@@ -47,7 +46,7 @@ jobs:
       - name: Checkout Home Repository
         uses: actions/checkout@v2
         with:
-            repository: ${{ github.repository }}
+            repository: catalystneuro/.github
 
       - name: Run docstring check
         run: pytest tests/test_docstrings.py --package=${{ inputs.package-name }}
