@@ -1,0 +1,22 @@
+name: Add Pull Request to Dashboard  # This name will not be inherited by other workflow calls, only this repo
+
+on:
+  # To trigger for issues on this repo
+  pull_request:
+    types:
+      - opened
+  # To allow all CatalystNeuro repositories to utilize this common workflow
+  workflow_call:
+    secrets:
+      PROJECT_TOKEN:
+        required: true
+
+jobs:
+  add_to_dashboard:
+    name: Add Pull Request to Dashboard
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@v0.5.0
+        with:
+          project-url: https://github.com/orgs/catalystneuro/projects/3
+          github-token: ${{ secrets.PROJECT_TOKEN }}
