@@ -1,4 +1,4 @@
-name: Add Issue to Dashboard(test)
+name: Add Issue to Dashboard  # This name will not be inherited by other workflow calls, only this repo
 
 on:
   # To trigger for issues on this repo
