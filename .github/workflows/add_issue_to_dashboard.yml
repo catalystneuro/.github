@@ -1,0 +1,10 @@
+name: Add Issue to Dashboard(test)
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  add_to_dashboard:
+    uses: catalystneuro/.github/common_workflows/add_issue_to_dashboard.yml@main
