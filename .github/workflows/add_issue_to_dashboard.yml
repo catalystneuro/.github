@@ -7,4 +7,4 @@ on:
 
 jobs:
   add_to_dashboard:
-    uses: catalystneuro/.github/common_workflows/add_issue_to_dashboard.yml@main
+    uses: catalystneuro/.github/.github/workflows/common/add_issue_to_dashboard.yml@main
