@@ -15,6 +15,11 @@ on:
             description: 'The name of the package to check the docstrings for.'
             required: True
             type: string
+        names-to-skip:
+            description: 'The names of the modules/classes/functions/methods to skip in the docstring check.'
+            required: false
+            type: string
+            default: ''
 
 jobs:
   run:
@@ -49,4 +54,4 @@ jobs:
             repository: catalystneuro/.github
 
       - name: Run docstring check
-        run: pytest tests/test_docstrings.py --package=${{ inputs.package-name }}
+        run: pytest tests/test_docstrings.py --package=${{ inputs.package-name }} --names-to-skip=${{ inputs.names-to-skip }}
