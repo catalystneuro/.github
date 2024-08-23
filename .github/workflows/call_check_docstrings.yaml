@@ -4,9 +4,9 @@ on:
 
 jobs:
   check-docstrings:
-    uses: catalystneuro/.github/.github/workflows/check_docstrings.yaml@test_check_docstrings
+    uses: catalystneuro/.github/.github/workflows/check_docstrings.yaml@relax_docstrings
     with:
       python-version: '3.10'
-      repository: 'catalystneuro/roiextractors'
+      repository: 'catalystneuro/roiextractors@test_check_docstrings'
       package-name: 'roiextractors'
       names-to-skip: 'skipped_fn'
