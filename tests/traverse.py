@@ -19,7 +19,7 @@ def traverse_class(class_object: type, parent: str) -> List[FunctionType]:
     class_methods = []
     for attribute_name, attribute_value in class_object.__dict__.items():
         if isinstance(attribute_value, FunctionType) and attribute_value.__module__.startswith(parent):
-            if attribute_name.startswith("_"):
+            if attribute_name.startswith("_"): # skip all private and magic methods
                 continue
             class_methods.append(attribute_value)
     return class_methods
@@ -43,7 +43,7 @@ def traverse_module(module: ModuleType, parent: str) -> List:
     local_classes_and_functions = []
 
     for name in dir(module):
-        if name.startswith("__") and name.endswith("__"):  # skip all magic methods
+        if name.startswith("_"):  # skip all private and magic methods
             continue
 
         object_ = getattr(module, name)
@@ -79,7 +79,7 @@ def traverse_package(package: ModuleType, parent: str) -> List[ModuleType]:
     local_packages_and_modules = []
 
     for name in dir(package):
-        if name.startswith("__") and name.endswith("__"):  # skip all magic methods
+        if name.startswith("_"):  # skip all private and magic methods
             continue
 
         object_ = getattr(package, name)
