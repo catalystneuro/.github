@@ -19,7 +19,7 @@ def traverse_class(class_object: type, parent: str) -> List[FunctionType]:
     class_methods = []
     for attribute_name, attribute_value in class_object.__dict__.items():
         if isinstance(attribute_value, FunctionType) and attribute_value.__module__.startswith(parent):
-            if attribute_name.startswith("__") and attribute_name.endswith("__"):
+            if attribute_name.startswith("_"):
                 continue
             class_methods.append(attribute_value)
     return class_methods
