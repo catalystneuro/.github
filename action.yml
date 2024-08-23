@@ -41,6 +41,7 @@ runs:
         pip install pytest-xdist
         git config --global user.email "CI@example.com"
         git config --global user.name "CI Almighty"
+      shell: bash
 
     - name: Checkout Repository to be tested
       uses: actions/checkout@v2
@@ -50,6 +51,7 @@ runs:
 
     - name: Install package
       run: pip install .
+      shell: bash
 
     - name: Checkout Home Repository
       uses: actions/checkout@v2
@@ -58,3 +60,4 @@ runs:
 
     - name: Run docstring check
       run: pytest tests/test_docstrings.py --package=${{ inputs.package-name }} --names-to-skip=${{ inputs.names-to-skip }}
+      shell: bash
