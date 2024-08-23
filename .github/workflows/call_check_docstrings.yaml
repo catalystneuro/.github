@@ -4,7 +4,7 @@ on:
 
 jobs:
   check-docstrings:
-    uses: catalystneuro/.github/.github/actions/check_docstrings.yaml@relax_docstrings
+    uses: catalystneuro/.github/actions/check_docstrings.yaml@relax_docstrings
     with:
       python-version: '3.10'
       repository: 'catalystneuro/roiextractors'
