@@ -27,9 +27,6 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Setup Conda
-      uses: s-weigand/setup-conda@v1
-
     - name: Setup Python ${{ inputs.python-version }}
       uses: actions/setup-python@v2
       with:
