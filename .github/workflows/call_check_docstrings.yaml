@@ -1,4 +1,4 @@
-name: Test Check Docstrings
+name: Call Check Docstrings
 on:
   workflow_dispatch:
 
