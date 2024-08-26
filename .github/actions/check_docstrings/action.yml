@@ -52,5 +52,5 @@ runs:
       shell: bash
 
     - name: Run docstring check
-      run: pytest .github/actions/check_docstrings/tests --package=${{ inputs.package-name }} --names-to-skip=${{ inputs.names-to-skip }}
+      run: pytest ${{ github.action_path }}/tests --package=${{ inputs.package-name }} --names-to-skip=${{ inputs.names-to-skip }}
       shell: bash
