@@ -45,16 +45,12 @@ runs:
       with:
           repository: ${{ inputs.repository }}
           ref: ${{ inputs.branch }}
+          path: repo_to_test
 
     - name: Install package
-      run: pip install .
+      run: python -m pip install ./repo_to_test/${{ inputs.repository }}
       shell: bash
-      
-    - name: Checkout Home Repository
-      uses: actions/checkout@v2
-      with:
-          repository: catalystneuro/.github
 
     - name: Run docstring check
-      run: pytest .github/actions/check_docstrings/tests --package=${{ inputs.package-name }} --names-to-skip=${{ inputs.names-to-skip }}
+      run: pytest tests --package=${{ inputs.package-name }} --names-to-skip=${{ inputs.names-to-skip }}
       shell: bash
