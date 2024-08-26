@@ -50,11 +50,6 @@ runs:
       run: pip install .
       shell: bash
 
-    - name: Checkout Home Repository
-      uses: actions/checkout@v2
-      with:
-          repository: catalystneuro/.github
-
     - name: Run docstring check
       run: pytest tests/test_docstrings.py --package=${{ inputs.package-name }} --names-to-skip=${{ inputs.names-to-skip }}
       shell: bash
