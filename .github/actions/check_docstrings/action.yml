@@ -56,5 +56,5 @@ runs:
           repository: catalystneuro/.github
 
     - name: Run docstring check
-      run: pytest tests/test_docstrings.py --package=${{ inputs.package-name }} --names-to-skip=${{ inputs.names-to-skip }}
+      run: pytest .github/actions/check_docstrings/tests --package=${{ inputs.package-name }} --names-to-skip=${{ inputs.names-to-skip }}
       shell: bash
