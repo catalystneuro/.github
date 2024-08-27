@@ -8,9 +8,9 @@ jobs:
     name: Check Docstrings
     steps:
       - id: check_docstrings
-        uses: catalystneuro/.github/.github/actions/check_docstrings@main
+        uses: ./.github/actions/check_docstrings
         with:
-          python-version: '3.10'
+          python-version: '3.11'
           repository: 'catalystneuro/roiextractors'
           branch: 'main'
           package-name: 'roiextractors'
