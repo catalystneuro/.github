@@ -1,0 +1,17 @@
+name: Test Check Docstrings
+on:
+  workflow_dispatch:
+
+jobs:
+  check-docstrings:
+    runs-on: ubuntu-latest
+    name: Check Docstrings
+    steps:
+      - id: check_docstrings
+        uses: ./.github/actions/check_docstrings
+        with:
+          python-version: '3.11'
+          repository: 'catalystneuro/roiextractors'
+          branch: 'main'
+          package-name: 'roiextractors'
+          names-to-skip: 'skipped_fn'

@@ -55,7 +55,7 @@ def traverse_module(module: ModuleType, parent: str, names_to_skip: Optional[Lis
 
         if isinstance(object_, type) and object_.__module__.startswith(parent):  # class
             class_object = object_
-            class_functions = traverse_class(class_object=class_object, parent=parent)
+            class_functions = traverse_class(class_object=class_object, parent=parent, names_to_skip=names_to_skip)
             local_classes_and_functions.append(class_object)
             local_classes_and_functions.extend(class_functions)
 
@@ -97,13 +97,13 @@ def traverse_package(package: ModuleType, parent: str, names_to_skip: Optional[L
             and object_.__package__.startswith(parent)
         ):
             subpackage = object_
-            subpackage_members = traverse_package(package=subpackage, parent=parent)
+            subpackage_members = traverse_package(package=subpackage, parent=parent, names_to_skip=names_to_skip)
             local_packages_and_modules.append(subpackage)
             local_packages_and_modules.extend(subpackage_members)
 
         elif isinstance(object_, ModuleType) and object_.__package__.startswith(parent):
             module = object_
-            module_members = traverse_module(module=module, parent=parent)
+            module_members = traverse_module(module=module, parent=parent, names_to_skip=names_to_skip)
             local_packages_and_modules.append(module)
             local_packages_and_modules.extend(module_members)
 
