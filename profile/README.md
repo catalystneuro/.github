@@ -2,23 +2,47 @@
 <a href="http://catalystneuro.com"><img src="https://user-images.githubusercontent.com/51133164/210436509-1f565e74-a473-4e14-bf6a-697ae5612260.png" width="250"></a>
 </p>
 
-# Data engineering for neuroscience labs 🧠
-Neuroscience data is becoming larger and more complex everyday. The data we collect and the software we write can often be valuable outside the scope of the original project, and should be shared as public resources for the neuroscience community, but this is often a high bar for neuroscience labs to acheive on their own. While the benefits of sharing data and software are clear, it can be difficult for neroscientists to handle the data engineering challenges while focusing on the science.
+# Research software engineering for open neuroscience 🧠
+CatalystNeuro is a research software engineering consultancy that helps neuroscience labs share their data and software with the broader scientific community. We specialize in data standardization through [Neurodata Without Borders (NWB)](http://nwb.org), collaboration with the [DANDI Archive](http://dandiarchive.org), and development of analysis tools that make working with neurophysiology data easier.
 
-We integrate with BRAIN Initiative-funded neuroinformatics projects such as the [Neurodata Without Borders](http://nwb.org) data standard, the [DANDI Archive](http://dandiarchive.org), and [SpikeInterface](https://spikeinterface.readthedocs.io/) to help labs adopt these tools. Our goal is to help labs share their data and software easily and effectively, and to facilitate secondary analysis of these datasets to accelerate the rate of scientific discovery. We believe that effective packaging and sharing of data and software will lead to new scientific workflows that build upon and combine existing studies, enabling deeper understanding of the brain and more rapid discovery of treatment for neurological disorders.
+Neuroscience data is becoming larger and more complex every day. The data we collect and the software we write can be valuable well beyond the scope of the original project, but sharing these resources effectively is a high bar for individual labs to reach on their own. We help bridge that gap, handling the data engineering challenges so researchers can focus on the science.
+
+We believe that effective packaging and sharing of data and software will enable new scientific workflows that build upon and combine existing studies, leading to deeper understanding of the brain and faster discovery of treatments for neurological disorders.
 
 ## About Us 🧑‍💻
-[CatalystNeuro](http://catalystneuro.com) is a software consulting company that specializes in data engineering for neuroscience labs. We are a globally distributed team of neuroscientists who are also software developers, and we care deeply about helping neuroscience adopt state-of-the-art data engineering tools. We excel at helping data infrastructure tools with outreach and with helping neuroscience labs adopt data infrastructure tools, bridging the gap between developers and users. See our team [here](https://www.catalystneuro.com/team/).
+[CatalystNeuro](http://catalystneuro.com) is a globally distributed team of neuroscientists who are also software developers. We care deeply about helping neuroscience adopt modern data engineering practices. We work closely with labs to convert their data to standardized formats, and we collaborate with tool developers to improve usability and adoption. See our team [here](https://www.catalystneuro.com/team/).
 
 ## Key Software Projects 📈
-* [**NeuroConv**](https://github.com/catalystneuro/neuroconv) automates conversion of data from common formats into the [Neurodata Without Borders (NWB)](nwb.org) format for distribution on the [DANDI Archive](dandiarchive.org).
-* [**NWB Widgets**](https://github.com/NeurodataWithoutBorders/nwbwidgets) provides automatic, interactive visualizations of the data within NWB files that are scalable and integrated with the DANDI Archive.
-* [**SpikeInterface**](https://github.com/SpikeInterface/spikeinterface) is a community-driven unified framework for spike sorting.
-* [**NWB GUIDE**](https://github.com/NeurodataWithoutBorders/nwb-guide) provides a user-friendly no-code graphical user interface for converting data to NWB, inspecting NWB files, and exploring the data within NWB files.
+
+We work collaboratively on open source projects, and many of the tools we contribute to live in other GitHub organizations. Here are some of the projects we develop and maintain:
+
+**Data standardization and sharing**
+
+* [**NeuroConv**](https://github.com/catalystneuro/neuroconv): Automates conversion of data from common formats into NWB for distribution on the DANDI Archive.
+* [**NWB Inspector**](https://github.com/NeurodataWithoutBorders/nwbinspector): Validates NWB files against best practices and the NWB schema to ensure data quality.
+* [**NWB GUIDE**](https://github.com/NeurodataWithoutBorders/nwb-guide): A user-friendly graphical interface for converting data to NWB without writing code.
+
+**Visualization**
+
+* [**NWB Widgets**](https://github.com/NeurodataWithoutBorders/nwbwidgets): Automatic, interactive visualizations of NWB data, integrated with DANDI.
+* [**neurosift**](https://github.com/flatironinstitute/neurosift): Browser-based interactive visualizations for exploring NWB files and DANDI datasets.
+
+**Analysis tools**
+
+* [**SpikeInterface**](https://github.com/SpikeInterface/spikeinterface): A community-driven unified framework for spike sorting electrophysiology data.
+* [**VAME**](https://github.com/EthoML/VAME): Variational Animal Motion Encoding for analyzing behavioral videos.
+* [**voluseg**](https://github.com/mikarubi/voluseg): Segmentation of volumetric calcium imaging data.
+* [**GuPPY**](https://github.com/LernerLab/GuPPy): Analysis of fiber photometry data.
+
+**Emerging work**
+
+* [**torch_brain**](https://github.com/neuro-galaxy/torch_brain): Foundation models for neurophysiology data.
+
 
 ## Links 🔗
 
-You can find more information about us at the following links:
-
-* Twitter - [@catalystneuro](https://twitter.com/catalystneuro) 🐦
-* Website - [catalystneuro.com](https://catalystneuro.com) 🌐
+<p>
+<a href="https://catalystneuro.com">🌐 Website</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="https://bsky.app/profile/catalystneuro.bsky.social"><img src="https://img.shields.io/badge/Bluesky-0285FF?logo=bluesky&logoColor=fff" alt="Bluesky" height="20"></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="https://twitter.com/catalystneuro"><img src="https://img.shields.io/badge/X-000000?logo=x&logoColor=fff" alt="X" height="20"></a>
+</p>
