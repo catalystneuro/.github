@@ -34,10 +34,6 @@ We work collaboratively on open source projects, and many of the tools we contri
 * [**voluseg**](https://github.com/mikarubi/voluseg): Segmentation of volumetric calcium imaging data.
 * [**GuPPY**](https://github.com/LernerLab/GuPPy): Analysis of fiber photometry data.
 
-**Emerging work**
-
-* [**torch_brain**](https://github.com/neuro-galaxy/torch_brain): Foundation models for neurophysiology data.
-
 
 ## Links 🔗
 
