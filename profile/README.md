@@ -34,7 +34,7 @@ We work collaboratively on open source projects, and many of the tools we contri
 * [**VAME**](https://github.com/EthoML/VAME): Variational Animal Motion Encoding for analyzing behavioral videos.
 * [**voluseg**](https://github.com/mikarubi/voluseg): Segmentation of volumetric calcium imaging data.
 * [**GuPPY**](https://github.com/LernerLab/GuPPy): Analysis of fiber photometry data.
-* [DANDI Atlas](https://atlas.dandiarchive.org): Interactively view brain areas for DANDI datasets.
+* [**DANDI Atlas**](https://atlas.dandiarchive.org): Interactively view brain areas for DANDI datasets.
 
 
 ## Links 🔗
