@@ -1,10 +1,6 @@
 name: Add Pull Request to Dashboard  # This name will not be inherited by other workflow calls, only this repo
 
 on:
-  # To trigger for issues on this repo
-  pull_request:
-    types:
-      - opened
   # To allow all CatalystNeuro repositories to utilize this common workflow
   workflow_call:
     secrets:

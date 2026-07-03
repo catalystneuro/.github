@@ -1,5 +1,5 @@
 <p align="center">
-<a href="http://catalystneuro.com"><img src="https://user-images.githubusercontent.com/51133164/210436509-1f565e74-a473-4e14-bf6a-697ae5612260.png" width="250"></a>
+<a href="http://catalystneuro.com"><img src="https://raw.githubusercontent.com/catalystneuro/.github/main/profile/assets/catalystneuro-logo.png" width="250" alt="CatalystNeuro"></a>
 </p>
 
 # Research software engineering for open neuroscience 🧠
@@ -34,6 +34,7 @@ We work collaboratively on open source projects, and many of the tools we contri
 * [**VAME**](https://github.com/EthoML/VAME): Variational Animal Motion Encoding for analyzing behavioral videos.
 * [**voluseg**](https://github.com/mikarubi/voluseg): Segmentation of volumetric calcium imaging data.
 * [**GuPPY**](https://github.com/LernerLab/GuPPy): Analysis of fiber photometry data.
+* [DANDI Atlas](https://atlas.dandiarchive.org): Interactively view brain areas for DANDI datasets.
 
 
 ## Links 🔗
