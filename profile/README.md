@@ -1,5 +1,5 @@
 <p align="center">
-<a href="http://catalystneuro.com"><img src="https://user-images.githubusercontent.com/51133164/210436509-1f565e74-a473-4e14-bf6a-697ae5612260.png" width="250"></a>
+<a href="http://catalystneuro.com"><img src="https://raw.githubusercontent.com/catalystneuro/.github/main/profile/assets/catalystneuro-logo.png" width="250" alt="CatalystNeuro"></a>
 </p>
 
 # Research software engineering for open neuroscience 🧠
