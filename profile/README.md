@@ -21,6 +21,7 @@ We work collaboratively on open source projects, and many of the tools we contri
 * [**NeuroConv**](https://github.com/catalystneuro/neuroconv): Automates conversion of data from common formats into NWB for distribution on the DANDI Archive.
 * [**NWB Inspector**](https://github.com/NeurodataWithoutBorders/nwbinspector): Validates NWB files against best practices and the NWB schema to ensure data quality.
 * [**NWB GUIDE**](https://github.com/NeurodataWithoutBorders/nwb-guide): A user-friendly graphical interface for converting data to NWB without writing code.
+* [**zarr-matlab**](https://github.com/catalystneuro/zarr-matlab): Read/write Zarr v3 in native MATLAB
 
 **Visualization**
 
